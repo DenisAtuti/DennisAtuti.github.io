@@ -98,9 +98,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-.profile .personal div {
-  margin: 10rem;
-}
 .personal .social-links {
   display: flex;
   flex-direction: column;
@@ -178,7 +175,7 @@ body {
 }
 .about-me .about-header p{
     font-size: 2rem;
-    /* max-width: 50%; */
+    max-width: 50%;
 }
 .about-me .experience{
     display: flex;
@@ -239,5 +236,11 @@ body {
   }
   .personal .social-links a {
     margin: 1rem;
+  }
+  .personal .introduction{
+    width: 100%;
+  }
+  .personal .introduction p{
+      font-size: 1.5rem;
   }
 }
