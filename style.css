@@ -26,6 +26,9 @@ body {
   color: var(--black-text);
   min-height: 100vh;
   min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .profile .menu {
   position: fixed;
@@ -76,7 +79,6 @@ body {
 .profile .menu .hamburger-nav.show {
   transform: translateY(0);
   transition: all 0.5s ease;
-  opacity: 1;
 }
 .profile .menu .hamburger-nav ul li {
   font-size: 1.5rem;
@@ -95,7 +97,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 25rem;
 }
 .profile .personal div {
   margin: 10rem;
@@ -150,6 +151,67 @@ body {
   background: url("images/profile.jpg") no-repeat center center/cover;
 }
 
+
+/* ABOUT SECTION */
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-me .about-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+.about-me .about-header h2{
+    font-size: 3rem;
+}
+.about-me .about-header span{
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+.about-me .about-header p{
+    font-size: 2rem;
+    /* max-width: 50%; */
+}
+.about-me .experience{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.about-me .experience div{
+    margin: 1rem;
+}
+.about-me .experience div h2{
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+.about-me .experience div span {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+.about-me .cv a{
+    text-decoration: none;
+  padding: 1rem 1.5rem;
+  border: 0.1rem solid var(--border-color);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  background-color: #fff;
+  color: var(--black-text-color);
+}
+.about-me .cv a:hover{
+    background-color: var(--background-color);
+    color: var(--border-color);
+    transition: all 0.3s ease-in-out;
+}
 /* RESPONSIVE DESIGN */
 @media only screen and (max-width: 550px) {
   html {
