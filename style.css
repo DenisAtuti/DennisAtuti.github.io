@@ -30,6 +30,7 @@ body {
 .profile .menu {
   position: fixed;
   min-width: 100vw;
+  height: 0;
   top: 2rem;
 }
 .profile .menu .navigation {
@@ -68,21 +69,14 @@ body {
   color: var(--primary-color);
 }
 .profile .menu .hamburger-nav {
-  min-width: 100vw;
   text-align: center;
-  transform: translateX(-100vw);
+  transform: translateY(-100vw);
   transition: all 0.5s ease-in;
-  opacity: 0;
-  pointer-events: none;
-  background-color: red;
-  /* display: none; */
 }
 .profile .menu .hamburger-nav.show {
-  /* display: block; */
-  transform: translateX(0);
+  transform: translateY(0);
   transition: all 0.5s ease;
   opacity: 1;
-  pointer-events: auto;
 }
 .profile .menu .hamburger-nav ul li {
   font-size: 1.5rem;
