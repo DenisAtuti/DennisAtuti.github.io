@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+:root {
+    --black-text-color:#17252A;
+    --background-color:#2B7A78;
+    --primary-color:#3AAFA9;
+    --border-color:#DEF2F1;
+    --body-background-color:#FEFFFF;
+}
+html{
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    font-family:'Merienda', cursive;
+    background-color: var(--body-background-color);
+    overflow: hidden;
+}
+.profile{
+    color: var(--black-text);
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.profile .navigation{
+    margin-top: 2rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.profile .navigation .brand{
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+.profile .navigation .nav ul{
+    display: flex;
+}
+.profile .navigation .nav ul li{
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.profile .navigation .nav ul li.nav-link.active{
+    color: var(--primary-color);
+}
+
+.profile .navigation .nav ul li:hover{
+    color: var(--primary-color);
+}
+    /* HAMBURGER */
+.navigation .icon-nav {
+    display: none;
+}
+
+.navigation .icon-nav i{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.profile .hamburger-nav{
+    min-width: 100vw;
+    text-align: center;
+    transform: translateX(-100vw);
+    transition: transform 0.5s ease-in;
+    /* display: none; */
+}
+.profile .hamburger-nav.show{
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+}
+.profile .hamburger-nav ul li{
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--body-background-color);
+    cursor: pointer;
+}
+.profile .hamburger-nav ul li:hover{
+    color: var(--black-text-color);
+}
+
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width:550px){
+    .profile .navigation .nav{
+        display: none;
+    }
+    .navigation .icon-nav{
+        display: block;
+    }
+    .navigation .icon-nav span:nth-child(2){
+        display: none;
+    }
+}
