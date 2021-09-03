@@ -115,6 +115,7 @@ body {
 }
 .personal .introduction {
   width: 50rem;
+  padding: 1rem;
 }
 .personal .introduction h2 {
   font-size: 3rem;
