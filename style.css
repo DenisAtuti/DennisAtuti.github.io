@@ -380,6 +380,46 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+/* FOOTER */
+.footer{
+  background-color: var(--background-color);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.footer .footer-content{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+.footer .footer-content .footer-header h2{
+  font-size: 3rem;
+}
+.footer .footer-content .footer-header span{
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.footer .footer-content .footer-links ul li{
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.footer .footer-content .footer-links ul li a{
+  text-decoration: none;
+  color: #fff;
+  
+}
+.footer .footer-content .footer-social a{
+  font-size: 2rem;
+  margin: 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+.footer span{
+  align-self: center;
+}
+
 
 
 /* RESPONSIVE DESIGN */
