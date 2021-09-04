@@ -221,6 +221,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10rem;
 }
 .skills .skill-header{
     margin-bottom: 2rem;
@@ -267,11 +268,7 @@ body {
   background-color: var(--background-color);
   color: #fff;
 }
-.skills .skills-content .accordian.active:hover{
-  border: 0.01rem solid var(--primary-color);
-  background-color: #fff;
-  color: var(--black-text-color);
-}
+
 .skills .skills-content .accordian.active::after{
   content: '\25b4';
 }
@@ -285,6 +282,102 @@ body {
   font-size: 1.5rem;
   padding: 1rem;
   border-bottom: solid 0.1rem var(--primary-color);
+}
+
+/* CONTACT ME */
+.contact-me{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+.contact-me .contact-header{
+  margin-bottom: 2rem;
+}
+.contact-me .contact-header h2{
+  font-size: 3rem;
+}
+.contact-me .contact-header span{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-style: italic;
+}
+.contact-me .contact-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact-me .contact-content .contact{
+  margin-right: 3rem;
+}
+.contact-me .contact-content .contact div{
+  margin-bottom: 1.5rem;
+}
+.contact-me .contact-content .contact i{
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: var(--primary-color);
+}
+.contact-me .contact-content .contact p{
+  font-size: 2rem;
+}
+.contact-me .contact-content .contact span{
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.contact-me .contact-content .message{
+  padding: 2rem;
+}
+.contact-me .contact-content .message input{
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border: solid 0.1rem var(--primary-color);
+  color: var(--background-color);
+  outline: none;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  font-family: inherit;
+}
+.contact-me .contact-content .message input::placeholder{
+  color: var(--background-color);
+  font-family:"Merienda", cursive ;
+}
+.contact-me .contact-content .message textarea{
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border: solid 0.1rem var(--primary-color);
+  color: #3aafa9;
+  outline: none;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  font-family: inherit;
+}
+.contact-me .contact-content .message textarea::placeholder{
+  color: var(--background-color);
+  font-family:"Merienda", cursive ;
+}
+.contact-me .contact-content .message button{
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  background-color: var(--background-color);
+  color: #fff;
+  outline: none;
+  border: 0.1rem solid var(--background-color);
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.5s ease-in-out;
+}
+.contact-me .contact-content .message button:hover{
+  border: 0.1rem solid var(--border-color);
+  background-color: #fff;
+  color: var(--black-text-color);
+  transition: all 0.5s ease-in-out;
 }
 
 
