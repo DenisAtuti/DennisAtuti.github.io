@@ -94,15 +94,17 @@ body {
 /* PERSONAL INFO */
 .profile .personal {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items:center;
   flex-wrap: wrap;
+}
+.profile .personal div{
+    margin: 2rem;
 }
 .personal .social-links {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
-  margin-right: 3rem;
 }
 .personal .social-links a {
   padding-bottom: 1rem;
@@ -196,6 +198,9 @@ body {
     font-weight: 100;
     font-size: 1.5rem;
 }
+.about-me .cv{
+    margin-bottom: 10rem;
+}
 .about-me .cv a{
     text-decoration: none;
   padding: 1rem 1.5rem;
@@ -210,8 +215,82 @@ body {
     color: var(--border-color);
     transition: all 0.3s ease-in-out;
 }
+/* SKILLS SECTION */
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills .skill-header{
+    margin-bottom: 2rem;
+}
+.skills .skill-header h2{
+    font-size: 3rem;
+}
+.skills .skill-header span{
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skills .skills-content .skill{
+    margin: 1.5rem;
+}
+.skills .skills-content .accordian{
+  width: 30rem;
+  padding: 1.5rem 1rem; 
+  border: 0.01rem solid var(--primary-color);
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+}
+.skills .skills-content .accordian::after{
+  content: '\25be';
+  float: right;
+  transform: scale(1.5);
+}
+.skills .skills-content .accordian:hover{
+  background-color: var(--background-color);
+  color: var(--border-color);
+  transition: all 0.3s ease-in-out;
+}
+.skills .skills-content .accordian.active{
+  background-color: var(--background-color);
+  color: #fff;
+}
+.skills .skills-content .accordian.active:hover{
+  border: 0.01rem solid var(--primary-color);
+  background-color: #fff;
+  color: var(--black-text-color);
+}
+.skills .skills-content .accordian.active::after{
+  content: '\25b4';
+}
+.skills .skills-content .accordian-content{
+ display: none;
+}
+.skills .skills-content .accordian.active + .accordian-content{
+  display: block;
+}
+.skills .skills-content .skill .accordian-content li{
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-bottom: solid 0.1rem var(--primary-color);
+}
+
+
+
 /* RESPONSIVE DESIGN */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
   html {
     font-size: 50%;
   }

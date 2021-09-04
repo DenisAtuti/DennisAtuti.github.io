@@ -37,3 +37,10 @@ humburgerLinks.forEach((link) =>{
     })
 })
 
+// ACCORDIAN TOGGLE
+const accordianBtn = document.querySelectorAll(".accordian")
+accordianBtn.forEach((btn)=>{
+    btn.addEventListener("click",()=>{
+        btn.classList.toggle("active")
+    })
+})
