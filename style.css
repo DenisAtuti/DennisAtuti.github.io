@@ -284,6 +284,81 @@ body {
   border-bottom: solid 0.1rem var(--primary-color);
 }
 
+
+
+/* PROJECTS SECTION */
+.projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.projects .project-header{
+  margin-bottom: 3rem;
+}
+.projects .project-header h2{
+  font-size: 3rem;
+}
+.projects .project-header span{
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.projects .stack{
+  margin: 1rem;
+}
+.projects .stack h2{
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  border: none;
+  border-bottom: solid 0.1rem var(--primary-color);
+}
+
+.projects .stack .cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projects .stack .cards .card{
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  margin-bottom: 2rem;
+}
+.projects .stack .cards .card .card-image{
+  height:50rem;
+  width: 50rem;
+  background: url("/images/full-stack.jpg") no-repeat center center/cover;
+}
+.projects .stack .cards .card .card-content{
+  margin: 1rem;
+  align-self: center;
+  width: 50rem;
+}
+.projects .stack .cards .card .card-content h3{
+  font-size: 3rem;
+}
+.projects .stack .cards .card .card-content p{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.projects .stack .cards .card .card-content a{
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  border: 0.1rem solid var(--border-color);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  background-color: #fff;
+  color: var(--black-text-color);
+}
+.projects .stack .cards .card .card-content a:hover{
+  background-color: var(--background-color);
+  color: var(--border-color);
+  transition: all 0.3s ease-in-out;
+}
+
+
 /* CONTACT ME */
 .contact-me{
   display: flex;
@@ -394,6 +469,9 @@ body {
   justify-content: space-evenly;
   padding: 2rem;
 }
+.footer .footer-content div{
+  margin: 1rem;
+}
 .footer .footer-content .footer-header h2{
   font-size: 3rem;
 }
@@ -454,5 +532,9 @@ body {
   }
   .personal .introduction p{
       font-size: 1.5rem;
+  }
+  /* //// PROJECT TEMPLATE */
+  .projects .stack .cards .card{
+    flex-wrap: wrap;
   }
 }
