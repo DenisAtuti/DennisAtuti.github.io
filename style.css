@@ -9,6 +9,7 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior:smooth;
 }
 
 * {
@@ -16,6 +17,10 @@ html {
   margin: 0;
   box-sizing: border-box;
   list-style: none;
+}
+/* UNIVERSAL STYLING */
+.divider{
+  height: 10vh;
 }
 body {
   font-family: "Merienda", cursive;
@@ -55,11 +60,15 @@ body {
   font-size: 1.5rem;
   cursor: pointer;
 }
-.profile .menu .navigation .nav ul li.nav-link.active {
+.profile .menu .navigation .nav ul li a{
+  text-decoration: none;
+  color: #17252a;
+}
+.profile .menu .navigation .nav ul li a.nav-link.active {
   color: var(--primary-color);
 }
 
-.profile .menu .navigation .nav ul li:hover {
+.profile .menu .navigation .nav ul li a:hover {
   color: var(--primary-color);
 }
 /* HAMBURGER */
@@ -80,14 +89,18 @@ body {
   transform: translateY(0);
   transition: all 0.5s ease;
 }
-.profile .menu .hamburger-nav ul li {
+.profile .menu .hamburger-nav ul li{
   font-size: 1.5rem;
   padding: 1.5rem;
   background-color: var(--primary-color);
   color: var(--body-background-color);
   cursor: pointer;
 }
-.profile .menu .hamburger-nav ul li:hover {
+.profile .menu .hamburger-nav ul li a{
+  text-decoration: none;
+  color: var(--body-background-color);
+}
+.profile .menu .hamburger-nav ul li a:hover {
   color: var(--black-text-color);
 }
 
