@@ -469,6 +469,9 @@ body {
   color: var(--black-text-color);
   transition: all 0.5s ease-in-out;
 }
+.contact-me .contact-content .message button i + i {
+  display: none;
+}
 
 /* FOOTER */
 .footer{
@@ -513,6 +516,50 @@ body {
   align-self: center;
 }
 
+/* TOAST SECTION */
+.toast{
+  position: fixed;
+  right: 0;
+  bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body-background-color);
+  padding: 1rem;
+  transform: translateX(40rem);
+  transition: transform 0.5s ease-in-out;
+}
+.toast.success{
+  border: solid 0.1rem var(--primary-color);
+  border-left: solid 0.5rem var(--primary-color);
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+.toast.error{
+  border: solid 0.1rem #FF9494;
+  border-left: solid 0.5rem #FF9494;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+.toast .toast-header h4{
+  font-size: 2rem;
+}
+.toast .toast-header{
+  margin-right: 1rem;
+}
+.toast .toast-header p{
+  font-size: 1rem;
+}
+.toast .toast-icon i{
+  font-size: 3rem;
+  display: none
+}
+.toast.success .toast-icon i{
+  color: var(--primary-color);
+}
+.toast.error .toast-icon i{
+  color: #FF9494;
+}
 
 
 /* RESPONSIVE DESIGN */

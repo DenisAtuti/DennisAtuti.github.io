@@ -203,11 +203,15 @@
                 </div>
             </div>
             <div class="message">
-                <form action="">
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="Email" required>
+                <form action="" id="myForm">
+                    <input type="text" name="fullname" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
                     <textarea name="message" id="message"  placeholder="Message" required></textarea>
-                    <button type="submit">Send <i class="far fa-paper-plane"></i> <i class="fas fa-circle-notch fa-spin"></i></button>
+                    <button type="submit">
+                        Send 
+                        <i class="far fa-paper-plane"></i> 
+                        <i class="fas fa-circle-notch fa-spin"></i>
+                    </button>
                 </form>
             </div>
         </div>
@@ -233,6 +237,16 @@
             </div>
         </div>
         <span>&copy; Copyrights 2021, Hash Studios</span>
+    </div>
+    <div class="toast" id="toast">
+        <div class="toast-header">
+            <h4></h4>
+            <p></p>
+        </div>
+        <div class="toast-icon">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
