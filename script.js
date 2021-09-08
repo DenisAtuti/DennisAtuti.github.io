@@ -97,7 +97,7 @@ myForm.addEventListener("submit",(e) =>{
     const formData = new FormData(myForm)
     const formDataSerialised = Object.fromEntries(formData);
 
-    fetch("https://portfolio-mail-sender.herokuapp.com/ap/send", {
+    fetch("https://portfolio-mail-sender.herokuapp.com/api/send", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
