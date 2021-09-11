@@ -317,7 +317,7 @@ body {
   font-style: italic;
 }
 .projects .stack{
-  margin: 1rem;
+  margin: 2rem;
 }
 .projects .stack h2{
   margin-bottom: 2rem;
@@ -336,15 +336,17 @@ body {
 .projects .stack .cards .card{
   display: flex;
   justify-content: center;
-  /* flex-wrap: wrap; */
   margin-bottom: 2rem;
 }
 .projects .stack .cards .card .card-image{
-  /* height:50rem; */
-  /* width: 50rem; */
   width: 40%;
   height: 30rem;
-  background: url("images/full-stack.jpg") no-repeat center center/cover;
+}
+.projects .stack .cards .card .card-image.overload{
+  background: url("images/overload.PNG") no-repeat center center/cover;
+}
+.projects .stack .cards .card .card-image.almuhannad{
+  background: url("images/almuhannad.PNG") no-repeat center center/cover;
 }
 .projects .stack .cards .card .card-content{
   margin: 1rem;
