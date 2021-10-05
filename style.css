@@ -312,6 +312,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100vw;
 }
 .projects .project-header{
   margin-bottom: 3rem;
@@ -325,6 +326,7 @@ body {
 }
 .projects .stack{
   margin: 2rem;
+  width: 90%;
 }
 .projects .stack h2{
   margin-bottom: 2rem;
@@ -355,6 +357,9 @@ body {
 .projects .stack .cards .card .card-image.almuhannad{
   background: url("images/almuhannad.PNG") no-repeat center center/cover;
 }
+.projects .stack .cards .card .card-image.nusr-et{
+  background: url("images/nusr-et.PNG") no-repeat center center/cover;
+}
 .projects .stack .cards .card .card-content{
   margin: 1rem;
   align-self: center;
@@ -364,10 +369,10 @@ body {
   font-size: 3rem;
 }
 .projects .stack .cards .card .card-content p{
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
-.projects .stack .cards .card .card-content a{
+.projects .stack .cards .card .card-content .link{
   text-decoration: none;
   padding: 1rem 1.5rem;
   border: 0.1rem solid var(--border-color);
@@ -376,7 +381,7 @@ body {
   background-color: #fff;
   color: var(--black-text-color);
 }
-.projects .stack .cards .card .card-content a:hover{
+.projects .stack .cards .card .card-content .link:hover{
   background-color: var(--background-color);
   color: var(--border-color);
   transition: all 0.3s ease-in-out;
