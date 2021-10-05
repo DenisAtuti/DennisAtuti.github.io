@@ -287,10 +287,16 @@ body {
   content: '\25b4';
 }
 .skills .skills-content .accordian-content{
- display: none;
+ /* display: none; */
+ transition: height 1s, opacity 1s linear;
+ opacity: 0;
+ height: 0;
+ overflow: hidden;
 }
 .skills .skills-content .accordian.active + .accordian-content{
-  display: block;
+  /* display: block; */
+  opacity: 1;
+  height: auto;
 }
 .skills .skills-content .skill .accordian-content li{
   font-size: 1.5rem;
